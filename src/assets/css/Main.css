@@ -1,0 +1,87 @@
+/* 
+1rem = 16px || 100%
+1px = 16/100 = 6.25%
+10px = 6.25%*10 = 62.5%
+Now
+1rem = 10px || 62.5%
+*/
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  background-color: var(--colorPrimary);
+  font-family: sans-serif;
+}
+
+/* Main container */
+.main__container {
+  display: block;
+  box-sizing: border-box;
+  max-width: 100rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0rem 1.6rem;
+  transition: width 0.35s;
+}
+
+a {
+  text-decoration: none;
+}
+
+span {
+  font-family: sans-serif;
+}
+
+::-moz-selection {
+  /* Code for Firefox */
+  color: var(--colorText100);
+  background: var(--colorText20);
+}
+
+::selection {
+  color: var(--colorText100);
+  background: var(--colorText20);
+}
+
+@media (max-width: 820px) {
+  .main__container {
+    display: block;
+    box-sizing: border-box;
+    width: 49rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .main__container {
+    display: block;
+    box-sizing: border-box;
+    width: 45rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 500px) {
+  .main__container {
+    width: 40rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .main__container {
+    width: 35rem;
+  }
+}
+
+@media (max-width: 300px) {
+  .main__container {
+    width: 30rem;
+  }
+}
