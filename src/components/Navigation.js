@@ -1,4 +1,5 @@
 import React from 'react';
+import Theme from './Theme';
 
 const Navigation = () => {
   return (
@@ -25,10 +26,7 @@ const Navigation = () => {
           </a>
         </li>
         <li>
-          <div class="nav__theme">
-            <img src="" class="nav__theme-icon" alt="" id="theme-icon" />
-            <input type="checkbox" class="nav__theme-checkbox" />
-          </div>
+          <Theme />
         </li>
       </ul>
     </nav>

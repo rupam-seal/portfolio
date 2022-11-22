@@ -5,10 +5,13 @@ import Projects from '../components/home/Projects';
 import About from '../components/home/About';
 import Topbar from '../components/Topbar';
 import Navigation from '../components/Navigation';
+import Menu from '../components/Menu';
 
 const Home = () => {
   return (
     <div className="main__container">
+      {/* Menu */}
+      <Menu />
       {/* TOPBAR SECTION */}
       <Topbar />
       {/* HERO SECTION */}

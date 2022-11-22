@@ -1,0 +1,49 @@
+body.light {
+    --colorPrimary: rgb(240, 230, 218);
+    --colorSecondary100: #815bd5;
+    --colorSecondary90: #8c65e2;
+    --colorSecondary90: #6e4eb4;
+    --colorHighlight: rgb(255, 99, 195);
+  
+    --colorText100: #1b202d;
+    --colorText90: rgba(27, 32, 45, 0.92);
+    --colorText50: rgba(27, 32, 45, 0.5);
+    --colorText20: rgba(27, 32, 45, 0.2);
+  
+    --colorTextBtn: #f0e6da;
+    --colorCardBg: rgba(249, 245, 239, 0.443);
+    --colorOverlayBg: linear-gradient(
+      rgba(240, 230, 218, 0.3),
+      rgba(240, 230, 218, 0.3)
+    );
+    --colorLiquidObj: linear-gradient(90deg, #8c65e2, #f9d48b);
+    --colorThemeBg: #815bd5;
+    --colorProjectBg: rgba(240, 230, 218, 0.9);
+    --colorMenu100: rgb(251,251,246);
+    --colorMenu50: #8c65e2;
+}
+
+body.dark {
+    --colorPrimary: rgb(29, 29, 31);
+    --colorSecondary100: #2eb8a4;
+    --colorSecondary90: #e4e648;
+    --colorSecondary80: #59f4dc;
+    --colorHighlight: rgb(255, 99, 195);
+  
+    --colorText100: #ffffff;
+    --colorText90: rgba(255, 255, 255, 0.92);
+    --colorText50: rgba(255, 255, 255, 0.5);
+    --colorText20: rgba(255, 255, 255, 0.2);
+  
+    --colorTextBtn: rgb(29, 29, 31);
+    --colorCardBg: rgba(36, 36, 36, 0.443);
+    --colorOverlayBg: linear-gradient(
+      rgba(29, 29, 31, 0.5),
+      rgba(29, 29, 31, 0.5)
+    );
+    --colorLiquidObj: linear-gradient(90deg, #e4e648, #8c65e2);
+    --colorThemeBg: #e4e648;
+    --colorProjectBg: rgba(29, 29, 31, 0.9);
+    --colorMenu100: #000000;
+    --colorMenu50: #815bd5;
+}

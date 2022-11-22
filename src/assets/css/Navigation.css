@@ -40,34 +40,28 @@
   }
   
   /* ========== DAY/NIGHT LOGO ========== */
-  .nav__theme {
+  #darkMode {
     position: relative;
-    width: 3.5rem;
-    height: 3.5rem;
+    cursor: pointer;
+    width: 3.6rem;
+    height: 3.6rem;
+    border-radius: 1rem;
+    border-style: none;
     background-color: var(--colorThemeBg);
-    margin-left: 3rem;
+    display: flex;
+    font-size: 1.8rem;
+    color: var(--colorMenu100);
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
-    z-index: 600;
-    border-radius: 0.6rem;
-    cursor: pointer;
-    transition: background-color 0.35s;
-  }
-  
-  .nav__theme-checkbox {
-    width: 80%;
-    height: 80%;
-    opacity: 0;
-    cursor: pointer;
-  }
-  
-  .nav__theme-icon {
-    width: 1.5rem;
-    height: 1.5rem;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) rotate(180deg);
-  }
+    transition: box-shadow 0.35s;
+    box-shadow: var(--btnBoxShadow);
+}
+
+#darkMode:hover {
+    box-shadow: var(--btnBoxShadowHover);
+
+}
   
   @media (max-width: 820px) {
     .nav {

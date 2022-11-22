@@ -11,6 +11,9 @@ import './assets/css/Projects.css';
 import './assets/css/About.css';
 import './assets/css/Topbar.css';
 import './assets/css/Navigation.css';
+import './assets/css/Menu.css';
+// Colors
+import './assets/css/Colors.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
