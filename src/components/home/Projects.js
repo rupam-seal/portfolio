@@ -2,39 +2,39 @@ import React from 'react';
 
 const projects = () => {
   return (
-    <section class="project__section" id="projects">
-      <div class="project__title">
-        <div class="project__title-container">
-          <span class="project__title">Projects</span>
-          <div class="project__title-line"></div>
+    <section className="project__section" id="projects">
+      <div className="project__title">
+        <div className="project__title-container">
+          <span className="project__title">Projects</span>
+          <div className="project__title-line"></div>
         </div>
       </div>
-      <div class="project__card-list">
-        <div class="project__card">
-          <div class="project__card-img-container">
-            <img src="" alt="" class="project__card-img" />
-            <div class="project__hover-bg"></div>
-            <div class="project__hover-reaveal">
-              <div class="project__hover-view">
-                <a class="project__hover-view-txt" href="" target="_blank">
+      <div className="project__card-list">
+        <div className="project__card">
+          <div className="project__card-img-container">
+            <img src="" alt="" className="project__card-img" />
+            <div className="project__hover-bg"></div>
+            <div className="project__hover-reaveal">
+              <div className="project__hover-view">
+                <a className="project__hover-view-txt" href="" target="_blank">
                   View Source
                 </a>
               </div>
-              <div class="project__hover-seperator"></div>
-              <div class="project__hover-live">
-                <a class="project__hover-live-txt" href="" target="_blank">
+              <div className="project__hover-seperator"></div>
+              <div className="project__hover-live">
+                <a className="project__hover-live-txt" href="" target="_blank">
                   Live Site
                 </a>
               </div>
             </div>
           </div>
-          <div class="project__card-txt-container">
-            <span class="project__card-title"></span>
-            <span class="project__card-desc"></span>
+          <div className="project__card-txt-container">
+            <span className="project__card-title"></span>
+            <span className="project__card-desc"></span>
           </div>
-          <div class="project__card-tag-list">
-            <div class="project__card-tag">
-              <p class="project__card-tag-txt"></p>
+          <div className="project__card-tag-list">
+            <div className="project__card-tag">
+              <p className="project__card-tag-txt"></p>
             </div>
           </div>
         </div>
