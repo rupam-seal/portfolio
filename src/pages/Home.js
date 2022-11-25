@@ -6,6 +6,7 @@ import About from '../components/home/About';
 import Topbar from '../components/Topbar';
 import Navigation from '../components/Navigation';
 import Menu from '../components/Menu';
+import LiquidObject from '../components/home/LiquidObject';
 
 const Home = () => {
   return (
@@ -24,6 +25,8 @@ const Home = () => {
       <About />
       {/* NAVIGATION SECTION */}
       <Navigation />
+      {/* Liquid Object */}
+      <LiquidObject />
     </div>
   );
 };

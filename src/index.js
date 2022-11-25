@@ -12,6 +12,7 @@ import './assets/css/About.css';
 import './assets/css/Topbar.css';
 import './assets/css/Navigation.css';
 import './assets/css/Menu.css';
+import './assets/css/LiquidObject.css';
 // Colors
 import './assets/css/Colors.css';
 

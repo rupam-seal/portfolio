@@ -3,25 +3,25 @@ import Theme from './Theme';
 
 const Navigation = () => {
   return (
-    <nav class="nav" id="nav">
-      <ul class="nav__list">
+    <nav className="nav" id="nav">
+      <ul className="nav__list">
         <li>
-          <a class="nav__item" href="#contact">
+          <a className="nav__item" href="#contact">
             contact
           </a>
         </li>
         <li>
-          <a class="nav__item" href="#projects">
+          <a className="nav__item" href="#projects">
             projects
           </a>
         </li>
         <li>
-          <a class="nav__item" href="#skills">
+          <a className="nav__item" href="#skills">
             skills
           </a>
         </li>
         <li>
-          <a class="nav__item" href="#about">
+          <a className="nav__item" href="#about">
             about
           </a>
         </li>
