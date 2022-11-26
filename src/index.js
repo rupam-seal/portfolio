@@ -8,7 +8,7 @@ import './assets/css/Font.css';
 import './assets/css/Hero.css';
 import './assets/css/Skills.css';
 import './assets/css/Projects.css';
-import './assets/css/About.css';
+import './assets/css/Contact.css';
 import './assets/css/Topbar.css';
 import './assets/css/Navigation.css';
 import './assets/css/Menu.css';

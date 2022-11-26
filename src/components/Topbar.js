@@ -1,44 +1,46 @@
 import React from 'react';
-import { FaBeer } from 'react-icons/fa';
+import { GiJetPack } from 'react-icons/gi';
+import {
+  AiOutlineGithub,
+  AiFillDribbbleCircle,
+  AiFillLinkedin,
+  AiFillTwitterCircle,
+} from 'react-icons/ai';
 
 const Topbar = () => {
+  /* Open when someone clicks on the span element */
+  function openMenu() {
+    document.getElementById('myNav').style.height = '100%';
+  }
   return (
     <div className="topbar">
       {/* logo */}
       <div className="topbar__logo-container">
-        <img id="logo-icon" src="" alt="" className="topbar__logo-img" />
+        <GiJetPack className="topbar__logo-img" />
         <span className="topbar__logo-txt">RupamSeal</span>
       </div>
 
       <div className="topbar__right">
         {/* social icons */}
         <div className="topbar__social-container">
-          <a
-            href="https://github.com/cypharlink"
-            target="_blank"
-            className="fa fa-github topbar__social-icon"
-          ></a>
-          <a
-            href="https://dribbble.com/dev_cyphar"
-            target="_blank"
-            className="fa fa-dribbble topbar__social-icon"
-          ></a>
-          <a
-            href="https://www.linkedin.com/in/rupam-seal-364539239/"
-            target="_blank"
-            className="fa fa-linkedin topbar__social-icon"
-          ></a>
-          <a
-            href="https://twitter.com/cypharlink"
-            target="_blank"
-            className="fa fa-twitter topbar__social-icon"
-          ></a>
+          <a>
+            <AiOutlineGithub className="topbar__social-icon" />
+          </a>
+          <a>
+            <AiFillDribbbleCircle className="topbar__social-icon" />
+          </a>
+          <a>
+            <AiFillLinkedin className="topbar__social-icon" />
+          </a>
+          <a>
+            <AiFillTwitterCircle className="topbar__social-icon" />
+          </a>
         </div>
 
         {/* expandable menu */}
-        <button onclick="openMenu()" className="topbar__menu-container">
-          <span onclick="openMenu()" className="topbar__menu-line"></span>
-          <span onclick="openMenu()" className="topbar__menu-txt">
+        <button onClick={openMenu} className="topbar__menu-container">
+          <span onClick={openMenu} className="topbar__menu-line"></span>
+          <span onClick={openMenu} className="topbar__menu-txt">
             MENU
           </span>
         </button>

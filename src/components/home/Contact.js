@@ -1,6 +1,12 @@
 import React from 'react';
+import {
+  AiOutlineGithub,
+  AiFillDribbbleCircle,
+  AiFillLinkedin,
+  AiFillTwitterCircle,
+} from 'react-icons/ai';
 
-const About = () => {
+const Contact = () => {
   return (
     <section className="footer" id="contact">
       <div className="footer__top">
@@ -12,26 +18,18 @@ const About = () => {
         <div className="footer__social">
           <div className="footer__social-title">On Web</div>
           <div className="footer__social-list">
-            <a
-              href="https://github.com/cypharlink"
-              target="_blank"
-              className="fa fa-github social"
-            ></a>
-            <a
-              href="https://dribbble.com/dev_cyphar"
-              target="_blank"
-              className="fa fa-dribbble social"
-            ></a>
-            <a
-              href="https://www.linkedin.com/in/rupam-seal-364539239/"
-              target="_blank"
-              className="fa fa-linkedin social"
-            ></a>
-            <a
-              href="https://twitter.com/cypharlink"
-              target="_blank"
-              className="fa fa-twitter social"
-            ></a>
+            <a>
+              <AiOutlineGithub className="social" />
+            </a>
+            <a>
+              <AiFillDribbbleCircle className="social" />
+            </a>
+            <a>
+              <AiFillLinkedin className="social" />
+            </a>
+            <a>
+              <AiFillTwitterCircle className="social" />
+            </a>
           </div>
         </div>
       </div>
@@ -47,4 +45,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Contact;

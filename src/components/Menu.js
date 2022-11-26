@@ -1,12 +1,15 @@
 import React from 'react';
 
 const Menu = () => {
+  /* Close when someone clicks on the "x" symbol inside the overlay */
+  function closeMenu() {
+    document.getElementById('myNav').style.height = '0%';
+  }
   return (
     <>
       {/* The overlay */}
       <div id="myNav" className="menu">
         <div className="menu__btn-container">
-          logo
           <div className="topbar__logo-container">
             <img
               src=""
@@ -16,9 +19,9 @@ const Menu = () => {
             />
             <span className="topbar__logo-txt">RupamSeal</span>
           </div>
-          <button onclick="closeMenu()" className="menu__menu-container">
-            <span onclick="closeMenu()" className="menu__menu-line"></span>
-            <span onclick="closeMenu()" className="menu__menu-txt">
+          <button onClick={closeMenu} className="menu__menu-container">
+            <span onClick={closeMenu} className="menu__menu-line"></span>
+            <span onClick={closeMenu} className="menu__menu-txt">
               CLOSE
             </span>
           </button>
