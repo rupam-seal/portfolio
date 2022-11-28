@@ -3,11 +3,11 @@ import React, { useEffect } from 'react';
 const LiquidObject = () => {
   useEffect(() => {
     // Mouse follow liquid object animation
-    const cursor = document.querySelector('.liquid-object');
-    let mouseMovementStoppedTimer;
-    const mouseMovementStopped = function () {
-      cursor.style.opacity = 0;
-    };
+    // const cursor = document.querySelector('.liquid-object');
+    // let mouseMovementStoppedTimer;
+    // const mouseMovementStopped = function () {
+    //   cursor.style.opacity = 0;
+    // };
 
     let mouseX = 0;
     let mouseY = 0;

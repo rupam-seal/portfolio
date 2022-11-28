@@ -23,16 +23,16 @@ const Topbar = () => {
       <div className="topbar__right">
         {/* social icons */}
         <div className="topbar__social-container">
-          <a>
+          <a href="https://github.com/rupam-seal">
             <AiOutlineGithub className="topbar__social-icon" />
           </a>
-          <a>
+          <a href="https://github.com/rupam-seal">
             <AiFillDribbbleCircle className="topbar__social-icon" />
           </a>
-          <a>
+          <a href="https://github.com/rupam-seal">
             <AiFillLinkedin className="topbar__social-icon" />
           </a>
-          <a>
+          <a href="https://github.com/rupam-seal">
             <AiFillTwitterCircle className="topbar__social-icon" />
           </a>
         </div>

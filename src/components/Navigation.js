@@ -27,12 +27,12 @@ const Navigation = () => {
     window.addEventListener(
       'resize',
       function (event) {
-        var windowWidth = window.innerWidth;
+        let windowWidth = window.innerWidth;
         // if widow width is equal or less than
         // mainContainer width we can set margin
         // right 2 rem
         if (windowWidth < 1050) {
-          var windowWidth = window.innerWidth;
+          windowWidth = window.innerWidth;
           const nav = document.getElementById('nav');
           nav.style.marginRight = 2 + 'rem';
         } else {

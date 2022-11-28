@@ -26,11 +26,16 @@ const hero = () => {
         </div>
         <div className="hero__resume-button">
           <div className="hero__resume-download">
-            <a target="_blank" href="" id="hero__resume-download-txt">
+            <a
+              rel="noreferrer"
+              target="_blank"
+              href="https://github.com/rupam-seal"
+              id="hero__resume-download-txt"
+            >
               Download
             </a>
           </div>
-          <a className="hero__resume-txt" href="#">
+          <a className="hero__resume-txt" href="https://github.com/rupam-seal">
             My Resume
           </a>
         </div>

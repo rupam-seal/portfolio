@@ -16,13 +16,23 @@ const projects = () => {
             <div className="project__hover-bg"></div>
             <div className="project__hover-reaveal">
               <div className="project__hover-view">
-                <a className="project__hover-view-txt" href="" target="_blank">
+                <a
+                  rel="noreferrer"
+                  className="project__hover-view-txt"
+                  href="https://github.com/rupam-seal"
+                  target="_blank"
+                >
                   View Source
                 </a>
               </div>
               <div className="project__hover-seperator"></div>
               <div className="project__hover-live">
-                <a className="project__hover-live-txt" href="" target="_blank">
+                <a
+                  rel="noreferrer"
+                  className="project__hover-live-txt"
+                  href="https://github.com/rupam-seal"
+                  target="_blank"
+                >
                   Live Site
                 </a>
               </div>

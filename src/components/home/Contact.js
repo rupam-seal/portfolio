@@ -18,16 +18,16 @@ const Contact = () => {
         <div className="footer__social">
           <div className="footer__social-title">On Web</div>
           <div className="footer__social-list">
-            <a>
+            <a href="https://github.com/rupam-seal">
               <AiOutlineGithub className="social" />
             </a>
-            <a>
+            <a href="https://github.com/rupam-seal">
               <AiFillDribbbleCircle className="social" />
             </a>
-            <a>
+            <a href="https://github.com/rupam-seal">
               <AiFillLinkedin className="social" />
             </a>
-            <a>
+            <a href="https://github.com/rupam-seal">
               <AiFillTwitterCircle className="social" />
             </a>
           </div>
