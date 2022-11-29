@@ -10,13 +10,15 @@ const Contact = () => {
   return (
     <section className="footer" id="contact">
       <div className="footer__top">
-        <span className="footer__title">Let's Talk</span>
-        <div className="footer__email-container">
-          <span className="email__title">Drop a mail</span>
-          <span className="email">cypharlink@gmail.com</span>
+        <div className="footer__left">
+          <span className="footer__title">Let's Talk</span>
+          <div className="footer__email-container">
+            <span className="email__title">Drop a mail</span>
+            <span className="email">cypharlink@gmail.com</span>
+          </div>
         </div>
         <div className="footer__social">
-          <div className="footer__social-title">On Web</div>
+          <span className="footer__social-title">On Web</span>
           <div className="footer__social-list">
             <a href="https://github.com/rupam-seal">
               <AiOutlineGithub className="social" />

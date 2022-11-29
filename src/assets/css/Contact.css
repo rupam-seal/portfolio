@@ -14,6 +14,11 @@
     align-items: top;
     padding: 3rem;
   }
+
+  .footer__left {
+    display: flex;
+    gap: 10rem;
+  }
   
   .footer__title {
     font-size: 3rem;
@@ -100,101 +105,31 @@
     .footer {
       margin-right: 0rem;
     }
+
     .footer__top {
-      padding: 2rem;
+      align-items: start;
+      padding-top: 2rem;
+      padding-bottom: 1rem;
     }
-    .footer__title {
-      font-size: 2rem;
-    }
-    .email__title {
-      font-size: 1.2rem;
-    }
-    .email {
-      font-size: 1rem;
-      margin-top: 0.5rem;
-    }
-    .footer__social-title {
-      font-size: 1.2rem;
-    }
-    .social {
-      font-size: 1.2rem;
-    }
+
     .footer__bottom {
-      padding: 2rem;
+      padding-top: 1rem;
+      padding-bottom: 2rem;
     }
-    .made {
-      font-size: 1rem;
+
+    .footer__left {
+      flex-direction: column;
+      gap: 1rem;
     }
-    .copyright {
-      font-size: 1rem;
+
+    .footer__social {
+      margin-top: 0.5rem;
     }
   }
   
   @media (max-width: 500px) {
-    .footer {
-      margin-right: 0rem;
-    }
-    .footer__top {
-      padding: 1.5rem;
-    }
-    .footer__title {
-      font-size: 1.5rem;
-    }
-    .email__title {
-      font-size: 1rem;
-    }
-    .email {
-      font-size: 0.8rem;
-      margin-top: 0.5rem;
-    }
-    .social {
-      font-size: 0.8rem;
-    }
-    .footer__social-title {
-      font-size: 1rem;
-    }
     .footer__bottom {
-      padding: 1.5rem;
-    }
-    .made {
-      font-size: 0.8rem;
-    }
-    .copyright {
-      font-size: 0.8rem;
+      flex-direction: column;
+      gap: 1rem;
     }
   }
-  
-  @media (max-width: 400px) {
-    .footer {
-      margin-right: 0rem;
-    }
-    .footer__top {
-      padding: 1.2rem;
-    }
-    .footer__title {
-      font-size: 1.2rem;
-    }
-    .email__title {
-      font-size: 0.8rem;
-    }
-    .email {
-      font-size: 0.7rem;
-      margin-top: 0.7rem;
-    }
-    .social {
-      font-size: 0.7rem;
-    }
-    .footer__social-title {
-      font-size: 0.8rem;
-    }
-    .footer__bottom {
-      padding: 1.2rem;
-    }
-    .made {
-      font-size: 0.8rem;
-    }
-    .copyright {
-      font-size: 0.7rem;
-    }
-  }
-  
