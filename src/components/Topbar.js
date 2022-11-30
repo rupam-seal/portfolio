@@ -10,7 +10,7 @@ import {
 const Topbar = () => {
   /* Open when someone clicks on the span element */
   function openMenu() {
-    document.getElementById('myNav').style.height = '100%';
+    document.getElementById('myNav').style.height = '100vh';
   }
   return (
     <div className="topbar">

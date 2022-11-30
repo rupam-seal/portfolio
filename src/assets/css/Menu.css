@@ -1,6 +1,6 @@
 .menu {
     width: 100%;
-    height: 0%;
+    height: 0vh;
     position: fixed;
     z-index: 1000;
     left: 0;
@@ -8,77 +8,19 @@
     background-color: var(--colorMenu100);
     overflow: hidden;
     transition: 0.5s;
-  }
-  
-  .menu__btn-container {
-    width: 100%;
-    max-width: 96.8rem;
-    margin: auto;
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
-    padding: 4rem 0rem;
-  }
-  
-  .menu__menu-container {
-    position: relative;
-    display: flex;
-    background-color: transparent;
-    border-style: none;
-    margin-right: 1rem;
-    align-items: center;
-    transform: translateX(1.5rem);
     justify-content: center;
-  }
-  
-  .menu__menu-line {
-    position: absolute;
-    width: 130%;
-    height: 0.1rem;
-    border-radius: 1rem;
-    left: -30%;
-    transform-origin: left 50%;
-    transform: scaleX(0.2);
-    opacity: 0.5;
-    background-color: var(--colorText100);
-    justify-content: center;
-    transition: transform 0.2s ease-in-out, opacity 0.35s ease-in-out,
-      background-color 0.45s ease-in-out;
-  }
-  
-  .menu__menu-txt {
-    font-size: 1.6rem;
-    color: var(--colorText100);
-    font-weight: 800;
-    cursor: pointer;
-    transition: all 0.5s ease-in-out;
-  }
-  
-  .menu__menu-container:hover .menu__menu-txt {
-    color: var(--colorSecondary90);
-  }
-  
-  .menu__menu-container:hover .menu__menu-line {
-    opacity: 1;
-    background-color: var(--colorSecondary90);
-    transform: scaleX(1);
-    -webkit-animation: lineAnim 0.3s ease-in-out forwards;
-    animation: lineAnim 0.3s ease-in-out forwards;
-    -webkit-animation-duration: 100s;
-    animation-duration: 100s;
-    -webkit-animation-delay: 0.2s;
-    animation-delay: 0.2s;
   }
   
   .menu__list {
     display: flex;
     position: relative;
-    top: 10%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-left:4rem;
   }
   
   .menu__txt-container {
