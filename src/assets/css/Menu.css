@@ -74,7 +74,11 @@
   @media (max-width: 820px) {
     .menu__txt {
       font-size: 6rem;
-      left: -40;
+    }
+
+    .menu__num {
+      left: -15%;
+      top: -20%;
     }
   }
 
