@@ -11,6 +11,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow-y: hidden;
   }
   
   .menu__list {
@@ -51,8 +52,10 @@
     font-family: "Notable", sans-serif;
     font-size: 5rem;
     color: var(--colorText20);
-    left: -20%;
-    top: -2%;
+    left: 0;
+    top: 0;
+    margin-left: -5rem;
+    margin-top: -2rem;
   }
   
   .menu__line {
@@ -77,8 +80,8 @@
     }
 
     .menu__num {
-      left: -20%;
-      top: -15%;
+      margin-left: -5rem;
+      margin-top: -1.5rem;
     }
   }
 
@@ -88,5 +91,7 @@
     }
     .menu__num {
       font-size: 4rem;
+      margin-left: -4rem;
+      margin-top: -1.5rem;
     }
   }
