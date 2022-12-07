@@ -1,106 +1,105 @@
 /* Background layer for hide the liquid object */
 .background-layer {
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    opacity: 1;
-    background: var(--colorOverlayBg);
-    -webkit-backdrop-filter: blur(7rem);
-    backdrop-filter: blur(7rem);
-    position: fixed;
-    z-index: -100;
-  }
-  
-  /* OBJECT MOVE WHEN MOUSE MOVE */
-  .liquid-object {
-    z-index: -200;
-    width: 35rem;
-    height: 40rem;
-    border-radius: 50rem;
-    opacity: 0.5;
-    overflow: hidden;
-    -webkit-filter: blur(5rem);
-    filter: blur(5rem);
-    background-size: cover;
-    /* background-image: url('https://media.giphy.com/media/3ohs4nsg2WyigiHYbu/giphy.gif'); */
-    background-image: var(--colorLiquidObj); /*#a374ff #f9d48b*/
-    -webkit-animation: gradient 20s infinite ease-out,
-      spin 15s linear 0s infinite normal, liquid 10s infinite;
-    animation: gradient 20s infinite ease-out, spin 15s linear 0s infinite normal,
-      liquid 10s infinite;
-    position: absolute;
-    transform: translateX(-50%) translateY(-50%) translate3d(0px, 0px, 0px);
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  opacity: 1;
+  background: var(--colorOverlayBg);
+  -webkit-backdrop-filter: blur(4rem);
+  backdrop-filter: blur(4rem);
+  position: fixed;
+  z-index: -100;
+}
+
+/* OBJECT MOVE WHEN MOUSE MOVE */
+.liquid-object {
+  z-index: -200;
+  width: 30rem;
+  height: 30rem;
+  border-radius: 50rem;
+  opacity: 0.4;
+  overflow: hidden;
+  -webkit-filter: blur(2rem);
+  filter: blur(2rem);
+  background-size: cover;
+  /* background-image: url('https://media.giphy.com/media/3ohs4nsg2WyigiHYbu/giphy.gif'); */
+  background-image: var(--colorLiquidObj); /*#a374ff #f9d48b*/
+  -webkit-animation: gradient 20s infinite ease-out,
+    spin 15s linear 0s infinite normal, liquid 10s infinite;
+  animation: gradient 20s infinite ease-out, spin 15s linear 0s infinite normal,
+    liquid 10s infinite;
+  position: absolute;
+  transform: translateX(-50%) translateY(-50%) translate3d(0px, 0px, 0px);
+  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  transition: opacity 3s ease-out;
+}
+
+/* LIQUID ANIMATION */
+@-webkit-keyframes liquid {
+  0% {
     border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
-    transition: opacity 3s ease-out;
+    background-size: 100%;
   }
-  
-  /* LIQUID ANIMATION */
-  @-webkit-keyframes liquid {
-    0% {
-      border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
-      background-size: 100%;
-    }
-    100% {
-      border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
-      background-size: 100%;
-    }
+  100% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    background-size: 100%;
   }
-  @keyframes liquid {
-    0% {
-      border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
-      background-size: 100%;
-    }
-    100% {
-      border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
-      background-size: 100%;
-    }
+}
+@keyframes liquid {
+  0% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    background-size: 100%;
   }
-  
-  /* GRADIENT ANIMATION */
-  @-webkit-keyframes gradient {
-    0% {
-      background-position: 0% 50%;
-    }
-    100% {
-      background-position: 100% 100%;
-    }
+  100% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    background-size: 100%;
   }
-  @keyframes gradient {
-    0% {
-      background-position: 0% 50%;
-    }
-    100% {
-      background-position: 100% 100%;
-    }
+}
+
+/* GRADIENT ANIMATION */
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 0% 50%;
   }
-  
-  @keyframes spin {
-    0% {
-      transform: translateX(-50%) translateY(-50%) rotate(360deg)
-        translate3d(0px, 0px, 0px);
-    }
-    100% {
-      transform: translateX(-50%) translateY(-50%) rotate(0deg);
-    }
+  100% {
+    background-position: 100% 100%;
   }
-  @-webkit-keyframes spin {
-    0% {
-      -webkit-transform: translateX(-50%) translateY(-50%) rotate(360deg)
-        translate3d(0px, 0px, 0px);
-    }
-    100% {
-      -webkit-transform: translateX(-50%) translateY(-50%) rotate(0deg)
-        translate3d(0px, 0px, 0px);
-    }
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
   }
-  
-  @media (max-width: 850px) {
-    .background-layer {
-      display: none;
-    }
-    .liquid-object {
-      display: none;
-    }
+  100% {
+    background-position: 100% 100%;
   }
-  
+}
+
+@keyframes spin {
+  0% {
+    transform: translateX(-50%) translateY(-50%) rotate(360deg)
+      translate3d(0px, 0px, 0px);
+  }
+  100% {
+    transform: translateX(-50%) translateY(-50%) rotate(0deg);
+  }
+}
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: translateX(-50%) translateY(-50%) rotate(360deg)
+      translate3d(0px, 0px, 0px);
+  }
+  100% {
+    -webkit-transform: translateX(-50%) translateY(-50%) rotate(0deg)
+      translate3d(0px, 0px, 0px);
+  }
+}
+
+@media (max-width: 850px) {
+  .background-layer {
+    display: none;
+  }
+  .liquid-object {
+    display: none;
+  }
+}

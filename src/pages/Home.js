@@ -3,9 +3,8 @@ import Hero from '../components/home/Hero';
 import Skills from '../components/home/Skills';
 import Projects from '../components/home/Projects';
 import Contact from '../components/home/Contact';
-import Topbar from '../components/Topbar';
-import Navigation from '../components/Navigation';
-import Menu from '../components/Menu';
+import Navigation from '../components/common/Navigation';
+import Menu from '../components/common/Menu';
 import LiquidObject from '../components/home/LiquidObject';
 
 const Home = () => {
@@ -14,8 +13,6 @@ const Home = () => {
       {/* Menu */}
       <Menu />
       {/* TOPBAR SECTION */}
-      <Topbar />
-      {/* HERO SECTION */}
       <Hero />
       {/* SKILLS SECTION */}
       <Skills />

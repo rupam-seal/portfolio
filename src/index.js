@@ -2,9 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 // PAGES
 import Home from './pages/Home';
+import Topbar from './components/common/Topbar';
 // CSS
-import './assets/css/Main.css';
-import './assets/css/Font.css';
+import './assets/css/Index.css';
 import './assets/css/Hero.css';
 import './assets/css/Skills.css';
 import './assets/css/Projects.css';
@@ -19,6 +19,8 @@ import './assets/css/Colors.css';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <Topbar />
+    {/* HERO SECTION */}
     <Home />
   </React.StrictMode>
 );

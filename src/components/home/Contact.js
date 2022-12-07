@@ -5,6 +5,7 @@ import {
   AiFillLinkedin,
   AiFillTwitterCircle,
 } from 'react-icons/ai';
+import { link } from '../../utils/SocialLink';
 
 const Contact = () => {
   return (
@@ -14,22 +15,22 @@ const Contact = () => {
           <span className="footer__title">Let's Talk</span>
           <div className="footer__email-container">
             <span className="email__title">Drop a mail</span>
-            <span className="email">cypharlink@gmail.com</span>
+            <span className="email">rupam.seal.00.00@gmail.com</span>
           </div>
         </div>
         <div className="footer__social">
           <span className="footer__social-title">On Web</span>
           <div className="footer__social-list">
-            <a href="https://github.com/rupam-seal">
+            <a href={link.github}>
               <AiOutlineGithub className="social" />
             </a>
-            <a href="https://github.com/rupam-seal">
+            <a href={link.dribble}>
               <AiFillDribbbleCircle className="social" />
             </a>
-            <a href="https://github.com/rupam-seal">
+            <a href={link.linkedin}>
               <AiFillLinkedin className="social" />
             </a>
-            <a href="https://github.com/rupam-seal">
+            <a href={link.twitter}>
               <AiFillTwitterCircle className="social" />
             </a>
           </div>
@@ -40,7 +41,7 @@ const Contact = () => {
           Made with <span className="heart">&#x2764;</span> in 2022
         </span>
         <span className="copyright">
-          &#169; 2022 CypharLink. All Rights Reserved.
+          &#169; {new Date().getFullYear()} rupamseal. All Rights Reserved.
         </span>
       </div>
     </section>

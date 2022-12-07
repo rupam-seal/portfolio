@@ -1,4 +1,5 @@
 import React from 'react';
+import resume from '../../assets/document/resume.pdf';
 
 const hero = () => {
   return (
@@ -29,13 +30,13 @@ const hero = () => {
             <a
               rel="noreferrer"
               target="_blank"
-              href="https://github.com/rupam-seal"
+              href={resume}
               id="hero__resume-download-txt"
             >
               Download
             </a>
           </div>
-          <a className="hero__resume-txt" href="https://github.com/rupam-seal">
+          <a className="hero__resume-txt" href={resume}>
             My Resume
           </a>
         </div>

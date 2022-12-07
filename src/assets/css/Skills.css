@@ -1,114 +1,113 @@
 /* ========== SECOND SECTION ========== */
 .second__section {
-    z-index: 500;
-    display: flex;
-    flex-direction: column;
-    margin-right: 17rem;
-    transition: margin 0.35s;
-    margin-top: 8rem;
+  z-index: 500;
+  display: flex;
+  flex-direction: column;
+  margin-right: 17rem;
+  transition: margin 0.35s;
+  margin-top: 8rem;
+}
+
+.second__title {
+  display: flex;
+  flex-direction: column;
+}
+
+.second__title-container {
+  display: flex;
+  flex-direction: column;
+  width: 5.2rem;
+  margin-top: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+
+.second__title {
+  color: var(--colorText90);
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.second__title-line {
+  width: 100%;
+  background-color: var(--colorText20);
+  height: 0.5rem;
+}
+
+/* ========== SECOND SECTION SKILL CARDS ========== */
+.second__skill {
+  display: grid;
+  gap: 3rem;
+  align-items: center;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: 1.2rem;
+}
+
+.second__skill-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.skill-card {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+#second__skill-icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--colorText90);
+  transition: color 0.5s;
+}
+
+.second__skill-title {
+  font-size: 1.6rem;
+  color: var(--colorSecondary90);
+  transition: color 0.5s;
+}
+
+.skill-card:hover #second__skill-icon,
+.skill-card:hover .second__skill-name {
+  color: var(--colorSecondary90);
+}
+
+.second__skill-list {
+  margin-top: 2rem;
+  display: grid;
+  align-items: center;
+  text-align: center;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.5rem;
+  background-color: var(--colorCardBg);
+  padding: 2rem;
+  border-radius: 2rem;
+}
+
+.second__skill-name {
+  color: var(--colorText50);
+  font-size: 1.2rem;
+  transition: color 0.5s;
+}
+
+@media (max-width: 1000px) {
+  .second__section {
+    margin-right: 7rem;
   }
-  
-  .second__title {
-    display: flex;
-    flex-direction: column;
+}
+
+@media (max-width: 820px) {
+  .second__section {
+    margin-right: 0rem;
   }
-  
-  .second__title-container {
-    display: flex;
-    flex-direction: column;
-    width: 5.2rem;
-    margin-top: 1.2rem;
-    margin-bottom: 1.2rem;
-  }
-  
-  .second__title {
-    color: var(--colorText90);
-    font-size: 2rem;
-    font-weight: 600;
-  }
-  
-  .second__title-line {
-    width: 100%;
-    background-color: var(--colorText20);
-    height: 0.5rem;
-  }
-  
-  /* ========== SECOND SECTION SKILL CARDS ========== */
+
   .second__skill {
     display: grid;
-    gap: 4rem;
+    gap: 2rem;
     align-items: center;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    margin-top: 1.2rem;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
   }
-  
-  .second__skill-container {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .skill-card {
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-  }
-  
-  #second__skill-icon {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    color: var(--colorText90);
-    transition: color 0.5s;
-  }
-  
-  .second__skill-title {
-    font-size: 1.6rem;
-    color: var(--colorSecondary90);
-    transition: color 0.5s;
-  }
-  
-  .skill-card:hover #second__skill-icon,
-  .skill-card:hover .second__skill-name {
-    color: var(--colorSecondary90);
-  }
-  
-  .second__skill-list {
-    margin-top: 2rem;
-    display: grid;
-    align-items: center;
-    text-align: center;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 0.5rem;
-    background-color: var(--colorCardBg);
-    padding: 2rem;
-    border-radius: 2rem;
-  }
-  
-  .second__skill-name {
-    color: var(--colorText50);
-    font-size: 1.2rem;
-    transition: color 0.5s;
-  }
-  
-  @media (max-width: 1000px) {
-    .second__section {
-      margin-right: 7rem;
-    }
-  }
-  
-  @media (max-width: 820px) {
-    .second__section {
-      margin-right: 0rem;
-    }
-  
-    .second__skill {
-      display: grid;
-      gap: 4rem;
-      align-items: center;
-      grid-template-columns: repeat(1, minmax(0, 1fr));
-    }
-  }
-  
+}
