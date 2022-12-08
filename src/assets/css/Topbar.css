@@ -59,9 +59,9 @@
   height: 3.6rem;
   border-radius: 1rem;
   border-style: none;
-  background-color: rgba(133, 133, 133, 0.308);
+  background-color: rgba(148, 148, 148, 0.308);
   font-size: 1.8rem;
-  color: #ffffff;
+  color: var(--colorText90);
   align-items: center;
   justify-content: center;
   cursor: pointer;
