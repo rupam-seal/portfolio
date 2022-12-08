@@ -1,4 +1,4 @@
-/* ========== HERO ========== */
+/* ========== right side nav ========== */
 .nav {
   position: fixed;
   top: 20%;
@@ -9,7 +9,7 @@
   z-index: 600;
 }
 
-/* ========== NAV LIST ==========  */
+/* ========== nav list ==========  */
 .nav__list {
   display: flex;
   align-items: center;
@@ -19,7 +19,7 @@
   z-index: 500;
 }
 
-/* ========== NAV ITEM ========== */
+/* ========== nav item ========== */
 .nav__item {
   font-size: 1.6rem;
   display: flex;

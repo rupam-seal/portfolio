@@ -6,7 +6,7 @@ const hero = () => {
     <section className="hero__section" id="about">
       <div className="hero__left-container">
         <div className="hero__about">
-          <span className="hero__name">rupam seal</span>
+          <span className="hero__name">nilax seal</span>
           <span className="hero__desc">
             &lt;Web and Android Developer&gt; &lt;UI/UX Designer&gt;
           </span>

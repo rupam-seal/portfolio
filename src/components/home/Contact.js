@@ -11,7 +11,7 @@ const Contact = () => {
   return (
     <section className="footer" id="contact">
       <div className="footer__top">
-        <div className="footer__left">
+        <div className="footer__top-container">
           <span className="footer__title">Let's Talk</span>
           <div className="footer__email-container">
             <span className="email__title">Drop a mail</span>

@@ -15,7 +15,7 @@
   padding: 3rem;
 }
 
-.footer__left {
+.footer__top-container {
   display: flex;
   gap: 10rem;
 }
@@ -64,7 +64,7 @@
 }
 
 .footer__social-list .social {
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin: 0.5rem 0.5rem;
   color: var(--colorText90);
   cursor: pointer;

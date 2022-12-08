@@ -1,4 +1,4 @@
-import card from '../assets/posts/card.png';
+import card from '../assets/posts/robox.png';
 import reptok from '../assets/posts/reptok.png';
 import robox from '../assets/posts/robox.png';
 
@@ -25,6 +25,6 @@ export const posts = [
     live: '',
     title: 'live weather app',
     desc: 'Live Search Weather App using React JS and React Functional Component, React Hooks, React Fetch API',
-    tags: ['ReactJs', 'HTML', 'CSS', 'JavaScript', 'Axios', 'OpenWeatherAPI'],
+    tags: ['ReactJs', 'HTML', 'CSS', 'JavaScript', 'Axios', 'OpenWeatherAPI '],
   },
 ];

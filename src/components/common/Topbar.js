@@ -16,12 +16,12 @@ const Topbar = () => {
     document.getElementById('myNav').style.height = '100vh';
   }
   return (
-    <div className="topbar__container">
-      <div className="topbar">
+    <div className="topbar">
+      <div className="topbar__container">
         {/* logo */}
         <div className="topbar__logo-container">
           <GiJetPack className="topbar__logo-img" />
-          <span className="topbar__logo-txt">RupamSeal</span>
+          <span className="topbar__logo-txt">NilaX</span>
         </div>
 
         <div className="topbar__right">
