@@ -43,9 +43,9 @@ body.dark {
     rgba(29, 29, 31, 0.5),
     rgba(29, 29, 31, 0.5)
   );
-  --colorLiquidObj: linear-gradient(90deg, #e3e64877, #8c65e2);
+  --colorLiquidObj: linear-gradient(90deg, #e4e648, #8c65e2);
   --colorThemeBg: #e4e648;
-  --colorProjectBg: rgba(29, 29, 33, 0.9);
+  --colorProjectBg: rgba(29, 29, 31, 0.9);
   --colorMenu100: #000000;
   --colorMenu50: #815bd5;
 
