@@ -1,7 +1,10 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import resume from '../../assets/document/resume.pdf';
+import { Canvas } from '@react-three/fiber';
+import { RoundedBox } from '@react-three/drei';
+import Spline from '@splinetool/react-spline';
 
-const hero = () => {
+const Hero = () => {
   return (
     <section className="hero__section" id="about">
       <div className="hero__left-container">
@@ -42,9 +45,11 @@ const hero = () => {
         </div>
       </div>
       {/* ISOMATRIC VIEW */}
-      <div className="hero__right-container" id="avatar"></div>
+      <div className="hero__right-container" id="avatar">
+        <Spline scene="https://prod.spline.design/lS8fzq1TO4nqjW-u/scene.splinecode" />
+      </div>
     </section>
   );
 };
 
-export default hero;
+export default Hero;
