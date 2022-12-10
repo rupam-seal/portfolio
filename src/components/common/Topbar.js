@@ -16,41 +16,44 @@ const Topbar = () => {
     document.getElementById('myNav').style.height = '100vh';
   }
   return (
-    <div className="topbar">
-      <div className="topbar__container">
-        {/* logo */}
-        <div className="topbar__logo-container">
-          <GiJetPack className="topbar__logo-img" />
-          <span className="topbar__logo-txt">NilaX</span>
-        </div>
-
-        <div className="topbar__right">
-          {/* social icons */}
-          <div className="topbar__social-container">
-            <a href={link.github}>
-              <AiOutlineGithub className="topbar__social-icon" />
-            </a>
-            <a href={link.dribble}>
-              <AiFillDribbbleCircle className="topbar__social-icon" />
-            </a>
-            <a href={link.linkedin}>
-              <AiFillLinkedin className="topbar__social-icon" />
-            </a>
-            <a href={link.twitter}>
-              <AiFillTwitterCircle className="topbar__social-icon" />
-            </a>
+    <>
+      <div className="topbar__layer"></div>
+      <div className="topbar">
+        <div className="topbar__container">
+          {/* logo */}
+          <div className="topbar__logo-container">
+            <GiJetPack className="topbar__logo-img" />
+            <span className="topbar__logo-txt">NilaX</span>
           </div>
 
-          {/* expandable menu */}
-          <div className="topbar__theme">
-            <Theme />
-          </div>
-          <div className="topbar__menu" onClick={openMenu}>
-            <TiThMenu />
+          <div className="topbar__right">
+            {/* social icons */}
+            <div className="topbar__social-container">
+              <a href={link.github}>
+                <AiOutlineGithub className="topbar__social-icon" />
+              </a>
+              <a href={link.dribble}>
+                <AiFillDribbbleCircle className="topbar__social-icon" />
+              </a>
+              <a href={link.linkedin}>
+                <AiFillLinkedin className="topbar__social-icon" />
+              </a>
+              <a href={link.twitter}>
+                <AiFillTwitterCircle className="topbar__social-icon" />
+              </a>
+            </div>
+
+            {/* expandable menu */}
+            <div className="topbar__theme">
+              <Theme />
+            </div>
+            <div className="topbar__menu" onClick={openMenu}>
+              <TiThMenu />
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

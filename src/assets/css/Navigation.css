@@ -6,7 +6,7 @@
   z-index: 105;
   transform: rotate(270deg);
   transform-origin: right bottom;
-  z-index: 600;
+  z-index: 100;
 }
 
 /* ========== nav list ==========  */

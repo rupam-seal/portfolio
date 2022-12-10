@@ -1,11 +1,11 @@
 /* ========== SECOND SECTION ========== */
 .second__section {
-  z-index: 500;
   display: flex;
   flex-direction: column;
   margin-right: 17rem;
   transition: margin 0.35s;
   margin-top: 8rem;
+  z-index: 100;
 }
 
 .second__title {
@@ -55,6 +55,7 @@
   justify-content: center;
   margin-top: 1rem;
   margin-bottom: 1rem;
+  z-index: 100;
 }
 
 #second__skill-icon {
