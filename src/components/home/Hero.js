@@ -1,10 +1,30 @@
-import React, { useEffect, useRef } from 'react';
+import React from 'react';
 import resume from '../../assets/document/resume.pdf';
-import { Canvas } from '@react-three/fiber';
-import { RoundedBox } from '@react-three/drei';
 import Spline from '@splinetool/react-spline';
 
 const Hero = () => {
+  var spline_obj;
+  let WINDOW_WIDTH = window.innerWidth;
+  // const spline_func = () => {
+
+  //   if (WINDOW_WIDTH < 800) {
+  //     console.log('Mobile');
+  //     console.log(spline_obj);
+  //   } else {
+  //     console.log('Desktop');
+  //     spline_obj = <h1>Hello0</h1>;
+  //   }
+  // };
+
+  // useEffect(() => {
+  //   spline_func();
+  //   window.addEventListener('resize', (event) => {
+  //     spline_func();
+  //   });
+  // }, []);
+
+  console.log(spline_obj);
+
   return (
     <section className="hero__section" id="about">
       <div className="hero__left-container">
@@ -46,7 +66,11 @@ const Hero = () => {
       </div>
       {/* ISOMATRIC VIEW */}
       <div className="hero__right-container" id="avatar">
-        <Spline scene="https://prod.spline.design/lS8fzq1TO4nqjW-u/scene.splinecode" />
+        {window.innerWidth <= 820 ? (
+          <Spline scene="https://prod.spline.design/Da7j8Jp7yKj-itxF/scene.splinecode" />
+        ) : (
+          <Spline scene="https://prod.spline.design/lS8fzq1TO4nqjW-u/scene.splinecode" />
+        )}
       </div>
     </section>
   );
