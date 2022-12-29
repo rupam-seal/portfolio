@@ -175,8 +175,11 @@
 
 /* ========== HERO RIGHT ========== */
 .hero__right-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: absolute;
-  right: 0;
+  right: -5rem;
   width: 60rem;
   height: 60rem;
   z-index: 50;

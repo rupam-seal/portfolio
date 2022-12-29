@@ -1,30 +1,11 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import resume from '../../assets/document/resume.pdf';
-import Spline from '@splinetool/react-spline';
+
+import { TailSpin } from 'react-loader-spinner';
+
+const Spline = React.lazy(() => import('@splinetool/react-spline'));
 
 const Hero = () => {
-  var spline_obj;
-  let WINDOW_WIDTH = window.innerWidth;
-  // const spline_func = () => {
-
-  //   if (WINDOW_WIDTH < 800) {
-  //     console.log('Mobile');
-  //     console.log(spline_obj);
-  //   } else {
-  //     console.log('Desktop');
-  //     spline_obj = <h1>Hello0</h1>;
-  //   }
-  // };
-
-  // useEffect(() => {
-  //   spline_func();
-  //   window.addEventListener('resize', (event) => {
-  //     spline_func();
-  //   });
-  // }, []);
-
-  console.log(spline_obj);
-
   return (
     <section className="hero__section" id="about">
       <div className="hero__left-container">
@@ -66,11 +47,28 @@ const Hero = () => {
       </div>
       {/* ISOMATRIC VIEW */}
       <div className="hero__right-container" id="avatar">
-        {window.innerWidth <= 820 ? (
-          <Spline scene="https://prod.spline.design/Da7j8Jp7yKj-itxF/scene.splinecode" />
-        ) : (
-          <Spline scene="https://prod.spline.design/lS8fzq1TO4nqjW-u/scene.splinecode" />
-        )}
+        <Suspense
+          fallback={
+            <div>
+              <TailSpin
+                height="80"
+                width="80"
+                color="#858585"
+                ariaLabel="tail-spin-loading"
+                radius="1"
+                wrapperStyle={{}}
+                wrapperClass=""
+                visible={true}
+              />
+            </div>
+          }
+        >
+          {window.innerWidth <= 820 ? (
+            <Spline scene="https://prod.spline.design/Da7j8Jp7yKj-itxF/scene.splinecode" />
+          ) : (
+            <Spline scene="https://prod.spline.design/lS8fzq1TO4nqjW-u/scene.splinecode" />
+          )}
+        </Suspense>
       </div>
     </section>
   );
