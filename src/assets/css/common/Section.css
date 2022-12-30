@@ -1,0 +1,40 @@
+/* ========== SECOND SECTION ========== */
+.section {
+    display: flex;
+    flex-direction: column;
+    margin-right: 17rem;
+    transition: margin 0.35s;
+    z-index: 100;
+  }
+  
+  .section__title-container {
+    display: flex;
+    flex-direction: column;
+    width: 5.2rem;
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+  }
+  
+  .section__title {
+    color: var(--colorText90);
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  
+  .section__title-line {
+    width: 100%;
+    background-color: var(--colorText20);
+    height: 0.5rem;
+  }
+
+  @media (max-width: 1000px) {
+    .section {
+      margin-right: 7rem;
+    }
+  }
+  
+  @media (max-width: 820px) {
+    .section {
+      margin-right: 0rem;
+    }
+  }

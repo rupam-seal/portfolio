@@ -9,7 +9,7 @@
 }
 
 /* ========== HERO LEFT ========== */
-.hero__left-container {
+.hero__left {
   width: 48rem;
   display: flex;
   flex-direction: column;
@@ -174,7 +174,7 @@
 }
 
 /* ========== HERO RIGHT ========== */
-.hero__right-container {
+.hero__right {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -195,10 +195,10 @@
     height: 50rem;
   }
 
-  .hero__left-container {
+  .hero__left {
     width: 40rem;
   }
-  .hero__right-container {
+  .hero__right {
     top: 0;
     bottom: 0;
     margin: auto 0;
@@ -213,12 +213,12 @@
     margin-top: 15rem;
     margin-bottom: 10rem;
   }
-  .hero__left-container {
+  .hero__left {
     width: 100%;
     margin-top: 16rem;
   }
 
-  .hero__right-container {
+  .hero__right {
     width: 49rem;
     height: 49rem;
     padding-right: 5rem;

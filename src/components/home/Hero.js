@@ -8,7 +8,7 @@ const Spline = React.lazy(() => import('@splinetool/react-spline'));
 const Hero = () => {
   return (
     <section className="hero__section" id="about">
-      <div className="hero__left-container">
+      <div className="hero__left">
         <div className="hero__about">
           <span className="hero__name">nilax seal</span>
           <span className="hero__desc">
@@ -16,9 +16,9 @@ const Hero = () => {
           </span>
         </div>
         <div className="hero__work">
-          <div className="hero__work-title-container">
-            <span className="hero__work-title">Work</span>
-            <div className="hero__work-title-line"></div>
+          <div className="section__title-container">
+            <span className="section__title">Work</span>
+            <div className="section__title-line"></div>
           </div>
           <p className="hero__work-txt">
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hi, I&#39;m Rupam Seal, a self-taught
@@ -46,7 +46,7 @@ const Hero = () => {
         </div>
       </div>
       {/* ISOMATRIC VIEW */}
-      <div className="hero__right-container" id="avatar">
+      <div className="hero__right" id="avatar">
         <Suspense
           fallback={
             <div>

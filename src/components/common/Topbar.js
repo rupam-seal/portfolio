@@ -8,7 +8,7 @@ import {
 } from 'react-icons/ai';
 import { TiThMenu } from 'react-icons/ti';
 import Theme from './Theme';
-import { link } from '../../utils/SocialLink';
+import { link } from '../../data/SocialLink';
 
 const Topbar = () => {
   /* Open when someone clicks on the span element */

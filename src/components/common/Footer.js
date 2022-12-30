@@ -5,7 +5,7 @@ import {
   AiFillLinkedin,
   AiFillTwitterCircle,
 } from 'react-icons/ai';
-import { link } from '../../utils/SocialLink';
+import { link } from '../../data/SocialLink';
 
 const Contact = () => {
   return (

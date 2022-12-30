@@ -19,7 +19,7 @@ body {
 }
 
 /* Main container */
-.main__container {
+.body__container {
   display: block;
   box-sizing: border-box;
   max-width: 100rem;
@@ -48,6 +48,29 @@ span {
   color: var(--colorText100);
   background: var(--colorText20);
 }
+
+/* ========= SCROLLBAR ========== */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--colorText20);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--colorText50);
+  border-radius: 1rem;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--colorSecondary90);
+}
+
 
 @media (max-width: 820px) {
   .main__container {

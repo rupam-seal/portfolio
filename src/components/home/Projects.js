@@ -1,5 +1,5 @@
 import React from 'react';
-import { posts } from '../../utils/Posts';
+import { posts } from '../../data/Posts';
 
 const projects = () => {
   const project = posts.map((post, index) => {
