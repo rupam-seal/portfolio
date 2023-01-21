@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { GiJetPack } from 'react-icons/gi';
 import {
   AiOutlineGithub,
@@ -8,23 +8,26 @@ import {
 } from 'react-icons/ai';
 import { TiThMenu } from 'react-icons/ti';
 import Theme from './Theme';
-import { link } from '../../data/SocialLink';
+import { link } from '../../data/SocialData';
+import { Link } from 'react-router-dom';
+import gsap from 'gsap';
 
 const Topbar = () => {
   /* Open when someone clicks on the span element */
   function openMenu() {
     document.getElementById('myNav').style.height = '100vh';
   }
+
   return (
     <>
       <div className="topbar__layer"></div>
       <div className="topbar">
         <div className="topbar__container">
           {/* logo */}
-          <div className="topbar__logo-container">
+          <Link to={'/'} className="topbar__logo-container">
             <GiJetPack className="topbar__logo-img" />
             <span className="topbar__logo-txt">NilaX</span>
-          </div>
+          </Link>
 
           <div className="topbar__right">
             {/* social icons */}

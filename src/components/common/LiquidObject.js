@@ -2,12 +2,21 @@ import React, { useEffect } from 'react';
 
 const LiquidObject = () => {
   useEffect(() => {
+    // setTimeout(() => {
+    document.addEventListener('mousemove', function (event) {
+      const x = event.pageX - 10;
+      const y = event.pageY - 10;
+      const cursor = document.querySelector('#cursor');
+      cursor.style.left = x + 'px';
+      cursor.style.top = y + 'px';
+    });
+
     // Mouse follow liquid object animation
-    // const cursor = document.querySelector('.liquid-object');
-    // let mouseMovementStoppedTimer;
-    // const mouseMovementStopped = function () {
-    //   cursor.style.opacity = 0;
-    // };
+    const cursor = document.querySelector('.liquid-object');
+    let mouseMovementStoppedTimer;
+    const mouseMovementStopped = function () {
+      cursor.style.opacity = 0;
+    };
 
     let mouseX = 0;
     let mouseY = 0;
@@ -37,23 +46,26 @@ const LiquidObject = () => {
       mouseX = event.pageX;
       mouseY = event.pageY;
       // // Make the cursor visible immediately
-      // cursor.style.opacity = 0.45;
+      // const cursor = document.querySelector('.liquid-object');
+      // cursor.style.opacity = 0.5;
 
       // // Change position of cursor only when mousemove is detected
       // setTimeout(() => {
-      //     // Change cursor position using translate, clientX & clientY
-      //     cursor.style.transform =  `translate(${event.clientX}px, ${event.clientY}px)`;
+      //   // Change cursor position using translate, clientX & clientY
+      //   cursor.style.transform = `translate(${event.clientX}px, ${event.clientY}px)`;
       // }, 100);
 
       // clearTimeout(mouseMovementStoppedTimer);
       // mouseMovementStoppedTimer = setTimeout(mouseMovementStopped, 800);
     });
+    // }, 2000);
   }, []);
 
   return (
     <>
       <div className="background-layer"></div>
       <div className="liquid-object"></div>
+      <div id="cursor"></div>
     </>
   );
 };
