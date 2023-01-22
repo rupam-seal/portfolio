@@ -1,5 +1,5 @@
 import React from 'react';
-import { technologies } from '../../data/Technologies';
+import { technologies } from '../../data/TechnologyData';
 
 const skills = () => {
   const skills = technologies.map((skill, index) => {

@@ -1,4 +1,4 @@
-import React, { Suspense } from 'react';
+import React, { Suspense, useRef } from 'react';
 import resume from '../../assets/document/resume.pdf';
 
 import { TailSpin } from 'react-loader-spinner';
@@ -17,7 +17,7 @@ const Hero = () => {
         </div>
         <div className="hero__work">
           <div className="section__title-container">
-            <span className="section__title">Work</span>
+            <span className="section__title">About</span>
             <div className="section__title-line"></div>
           </div>
           <p className="hero__work-txt">
