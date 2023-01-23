@@ -15,7 +15,7 @@
   background-color: var(--colorPrimary);
   left: 0;
   right: 0;
-  height: 4rem;
+  height: 5rem;
   z-index: 50;
 }
 
@@ -34,7 +34,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  cursor: pointer;
   z-index: 1000;
   padding-left: 1.6rem;
 }
@@ -106,7 +105,6 @@
 .topbar__right .topbar__social-icon {
   font-size: 2rem;
   color: var(--colorText90);
-  cursor: pointer;
   transition: color 0.5s;
 }
 
@@ -124,7 +122,6 @@
 .topbar__menu {
   display: none;
   position: relative;
-  cursor: pointer;
   width: 3.6rem;
   height: 3.6rem;
   border-radius: 1rem;
@@ -134,7 +131,6 @@
   color: var(--colorText90);
   align-items: center;
   justify-content: center;
-  cursor: pointer;
   transition: box-shadow 0.35s;
   box-shadow: var(--btnBoxShadow);
   margin-right: 1.6rem;

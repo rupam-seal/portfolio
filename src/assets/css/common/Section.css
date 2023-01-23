@@ -10,7 +10,7 @@
   .section__title-container {
     display: flex;
     flex-direction: column;
-    width: 5.2rem;
+    align-self: flex-start;
     margin-top: 1.2rem;
     margin-bottom: 1.2rem;
   }
@@ -23,7 +23,8 @@
   
   .section__title-line {
     width: 100%;
-    background-color: var(--colorText20);
+    background-color: var(--colorSecondary90);
+    border-radius: 1rem;
     height: 0.5rem;
   }
 

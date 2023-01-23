@@ -103,3 +103,25 @@
     display: none;
   }
 }
+
+#cursor {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: white;
+  border-radius: 50%;
+  mix-blend-mode: difference;
+  pointer-events: none;
+  transition: transform .15s ease-in-out;
+  z-index: 900;
+  animation: cursor-animation 850ms infinite alternate;
+}
+
+@keyframes cursor-animation {
+  from {
+      transform: scale(1);
+  }
+  to {
+      transform: scale(.6);
+  }
+}

@@ -1,9 +1,16 @@
+.footer__container {
+  max-width: 100rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .footer {
   display: flex;
   flex-direction: column;
-  margin-right: 17rem;
+  /* margin-right: 17rem; */
+  max-width: 100rem;
   background-color: var(--colorCardBg);
-  margin-top: 5rem;
+  margin-top: 7rem;
   margin-bottom: 3rem;
   border-radius: 2rem;
   z-index: 100;
@@ -104,6 +111,10 @@
 }
 
 @media (max-width: 820px) {
+  .footer__container {
+    width: 49rem;
+  }
+
   .footer {
     margin-right: 0rem;
   }
@@ -120,7 +131,7 @@
   }
 
   .footer__email-container {
-    display: none;
+    display: none;  
   }
 
   .footer__social {
@@ -128,7 +139,18 @@
   }
 }
 
+@media (max-width: 600px) {
+  .footer__container {
+    width: 45rem;
+  }
+}
+
+
 @media (max-width: 500px) {
+  .footer__container {
+    width: 40rem;
+  }
+
   .footer__email-container {
     display: none;
   }
@@ -149,5 +171,17 @@
   .footer__bottom {
     flex-direction: column;
     gap: 1rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .footer__container {
+    width: 35rem;
+  }
+}
+
+@media (max-width: 300px) {
+  .footer__container {
+    width: 30rem;
   }
 }

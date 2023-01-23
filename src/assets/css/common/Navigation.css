@@ -1,7 +1,7 @@
 /* ========== right side nav ========== */
 .nav {
   position: fixed;
-  top: 20%;
+  top: 18%;
   right: 0;
   z-index: 105;
   transform: rotate(270deg);

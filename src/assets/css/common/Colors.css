@@ -1,5 +1,5 @@
 body.light {
-  --colorPrimary: #f0e6da;
+  --colorPrimary: rgb(240, 230, 218);
   --colorSecondary100: #815bd5;
   --colorSecondary90: #8c65e2;
   --colorSecondary80: #6e4eb4;
