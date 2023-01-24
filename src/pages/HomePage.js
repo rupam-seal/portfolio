@@ -1,10 +1,10 @@
 import React from 'react';
-import Hero from '../components/home/Hero';
-import Skills from '../components/home/Skills';
-import Projects from '../components/home/Works';
+import Hero from '../components/HomeHero';
+import Skills from '../components/HomeSkills';
+import Projects from '../components/HomeWorks';
 import Menu from '../components/common/Menu';
+import HomeNavigation from '../components/HomeNavigation';
 import LiquidObject from '../components/common/LiquidObject';
-import Navigation from '../components/common/Navigation';
 
 const HomePage = () => {
   return (
@@ -18,7 +18,9 @@ const HomePage = () => {
       {/* PROJECTS SECTION */}
       <Projects />
       {/* NAVIGATION SECTION */}
-      <Navigation />
+      <HomeNavigation />
+      {/* Liquid Object */}
+      <LiquidObject />
     </>
   );
 };

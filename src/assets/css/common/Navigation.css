@@ -9,6 +9,20 @@
   z-index: 100;
 }
 
+.line {
+  position: absolute;
+  top: 52%;
+  right: 4.5rem;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  height: 0.1rem;
+  width: 0%;
+  border-radius: 0.2rem;
+  background-color: var(--colorText20);
+  max-width: 32rem;
+  transition: width 0.1s;
+}
+
 /* ========== nav list ==========  */
 .nav__list {
   display: flex;
@@ -30,10 +44,11 @@
   display: inline-block;
   margin-left: 2rem;
   font-weight: 500;
+  margin-bottom: 0.2rem;
   margin-right: 2rem;
   cursor: pointer;
   z-index: 600;
-  transition: color 0.8s ease-in-out;
+  /* transition: color 0.8s ease-in-out; */
 }
 .nav__item:hover {
   color: var(--colorSecondary90);

@@ -17,6 +17,7 @@
   right: 0;
   height: 5rem;
   z-index: 50;
+  opacity: 0.8;
 }
 
 .topbar__container {
@@ -35,7 +36,7 @@
   align-items: center;
   justify-content: center;
   z-index: 1000;
-  padding-left: 1.6rem;
+  padding-left: 0.8rem;
 }
 
 .topbar__logo-img {
@@ -99,7 +100,7 @@
   align-items: center;
   justify-content: center;
   gap: 2rem;
-  margin-right: 3rem;
+  padding-right: 1.6rem;
 }
 
 .topbar__right .topbar__social-icon {

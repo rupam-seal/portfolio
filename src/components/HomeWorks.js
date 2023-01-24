@@ -1,13 +1,37 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { projects } from '../../data/WorkData';
+import { projects } from '../data/WorkData';
 
 import { FaArrowRight } from 'react-icons/fa';
 
-const Works = () => {
+import { motion } from 'framer-motion';
+
+// ANIMATION VARIANTS
+const containerVariant = {
+  initial: {
+    opacity: 0,
+    x: -20,
+  },
+  animate: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      duration: 0.4,
+    },
+  },
+};
+
+const HomeWorks = () => {
   const project_card = projects.slice(0, 6).map((project, index) => {
     return (
-      <div className="project__card" key={index}>
+      <motion.div
+        variants={containerVariant}
+        viewport={{ once: true }}
+        initial="initial"
+        whileInView="animate"
+        className="project__card"
+        key={index}
+      >
         <div className="project__card-img-container">
           <img src={project.image} alt="" className="project__card-img" />
           <div className="project__hover-bg">
@@ -53,7 +77,7 @@ const Works = () => {
             );
           })}
         </div>
-      </div>
+      </motion.div>
     );
   });
   return (
@@ -69,4 +93,4 @@ const Works = () => {
   );
 };
 
-export default Works;
+export default HomeWorks;

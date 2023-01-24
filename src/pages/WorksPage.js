@@ -1,10 +1,13 @@
 import React from 'react';
-import Card from '../components/works/Card';
+import WorkProject from '../components/WorksProject';
+import LiquidObject from '../components/common/LiquidObject';
 
 const WorksPage = () => {
   return (
     <>
-      <Card />
+      <WorkProject />
+      {/* Liquid Object */}
+      <LiquidObject />
     </>
   );
 };

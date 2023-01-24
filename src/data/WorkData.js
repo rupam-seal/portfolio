@@ -1,7 +1,7 @@
-import card from '../assets/posts/robox.png';
-import android from '../assets/posts/DribbleShowCase.png';
-import ui from '../assets/posts/Dribble.png';
-import desktop from '../assets/posts/desktop.png';
+import card from '../assets/images/robox.png';
+import android from '../assets/images/DribbleShowCase.png';
+import ui from '../assets/images/Dribble.png';
+import desktop from '../assets/images/desktop.png';
 
 export const works = [
   {

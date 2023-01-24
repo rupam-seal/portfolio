@@ -1,5 +1,31 @@
 import React, { useEffect } from 'react';
-import Theme from './Theme';
+import Theme from './common/Theme';
+
+import { motion, useScroll } from 'framer-motion';
+
+// ANIMATION VARIANTS
+const containerVariant = {
+  initial: {
+    y: 0,
+  },
+  animate: {
+    y: 0,
+    transition: {
+      staggerChildren: 0.1,
+    },
+  },
+};
+
+const iconVariants = {
+  initial: {
+    y: 50,
+    opacity: 0,
+  },
+  animate: {
+    y: 0,
+    opacity: 1,
+  },
+};
 
 const Navigation = () => {
   useEffect(() => {
@@ -66,35 +92,60 @@ const Navigation = () => {
       nav.style.marginRight = (windowWidth - containerWidth) / 10 / 2 + 'rem';
       // console.log((((w-880)/10)/2)+'rem')
     }
+    document.addEventListener('wheel', (event) => {
+      const scrollableHeight =
+        window.document.body.scrollHeight - window.innerHeight;
+      const LINE_MAX_WIDTH = 32;
+      if (scrollableHeight <= 0) return 0;
+      const progress = document.getElementById('line');
+      progress.style.width = `${
+        (LINE_MAX_WIDTH * ((window.scrollY / scrollableHeight) * 100)) / 100
+      }rem`;
+      console.log(
+        `${
+          (LINE_MAX_WIDTH * ((window.scrollY / scrollableHeight) * 100)) / 100
+        }rem`
+      );
+    });
   });
+
   return (
-    <nav className="nav" id="nav">
-      <ul className="nav__list">
-        <li>
-          <a className="nav__item" href="#contact">
-            contact
-          </a>
-        </li>
-        <li>
-          <a className="nav__item" href="#projects">
-            projects
-          </a>
-        </li>
-        <li>
-          <a className="nav__item" href="#skills">
-            skills
-          </a>
-        </li>
-        <li>
-          <a className="nav__item" href="#about">
-            about
-          </a>
-        </li>
-        <li>
-          <Theme />
-        </li>
-      </ul>
-    </nav>
+    <>
+      <nav className="nav" id="nav">
+        <motion.div className="line" id="line"></motion.div>
+        <motion.ul
+          variants={containerVariant}
+          initial="initial"
+          animate="animate"
+          className="nav__list"
+        >
+          <motion.li variants={iconVariants}>
+            <a className="nav__item" href="#contact">
+              contact
+            </a>
+          </motion.li>
+          <motion.li variants={iconVariants}>
+            <a className="nav__item" href="#projects">
+              works
+            </a>
+          </motion.li>
+          <motion.li variants={iconVariants}>
+            <a className="nav__item" href="#skills">
+              skills
+            </a>
+          </motion.li>
+          <motion.li variants={iconVariants}>
+            <a className="nav__item" href="#about">
+              about
+            </a>
+          </motion.li>
+
+          <motion.li variants={iconVariants} whileTap={{ scale: 0.8 }}>
+            <Theme />
+          </motion.li>
+        </motion.ul>
+      </nav>
+    </>
   );
 };
 

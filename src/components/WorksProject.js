@@ -1,9 +1,33 @@
-import React, { Suspense, useEffect, useState } from 'react';
-import { CopyBlock, dracula } from 'react-code-blocks';
-import card from '../../assets/posts/robox.png';
+import React, { useEffect } from 'react';
+import card from '../assets/images/robox.png';
 import { IoIosArrowForward } from 'react-icons/io';
 import { Link } from 'react-router-dom';
-const Spline = React.lazy(() => import('@splinetool/react-spline'));
+
+import { motion } from 'framer-motion';
+
+// ANIMATION VARIANTS
+const containerVariant = {
+  initial: {
+    x: 0,
+  },
+  animate: {
+    x: 0,
+    transition: {
+      staggerChildren: 0.1,
+    },
+  },
+};
+
+const childVariants = {
+  initial: {
+    x: -50,
+    opacity: 0,
+  },
+  animate: {
+    x: 0,
+    opacity: 1,
+  },
+};
 
 const Card = () => {
   useEffect(() => {
@@ -31,7 +55,13 @@ const Card = () => {
   });
 
   return (
-    <div className="card" id="card">
+    <motion.div
+      className="card"
+      id="card"
+      variants={childVariants}
+      initial="initial"
+      animate="animate"
+    >
       <div className="detail__container">
         <div className="name__container">
           <Link to={'/'}>
@@ -49,8 +79,8 @@ const Card = () => {
           as-needed.
         </span>
       </div>
-      <img src={card} className="card__img tilt" />
-    </div>
+      <img src={card} alt="" className="card__img tilt" />
+    </motion.div>
   );
 };
 

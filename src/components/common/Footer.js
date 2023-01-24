@@ -7,9 +7,32 @@ import {
 } from 'react-icons/ai';
 import { link } from '../../data/SocialData';
 
+import { motion } from 'framer-motion';
+
+// ANIMATION VARIANTS
+const containerVariant = {
+  initial: {
+    opacity: 0,
+    x: -50,
+  },
+  animate: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      duration: 0.4,
+    },
+  },
+};
+
 const Contact = () => {
   return (
-    <div className="footer__container">
+    <motion.div
+      variants={containerVariant}
+      viewport={{ once: true }}
+      initial="initial"
+      whileInView="animate"
+      className="footer__container"
+    >
       <section className="footer" id="contact">
         <div className="footer__top">
           <div className="footer__top-container">
@@ -46,7 +69,7 @@ const Contact = () => {
           </span>
         </div>
       </section>
-    </div>
+    </motion.div>
   );
 };
 

@@ -1,21 +1,55 @@
-import React, { Suspense, useRef } from 'react';
-import resume from '../../assets/document/resume.pdf';
+import React, { Suspense } from 'react';
+import resume from '../assets/document/resume.pdf';
 
-import { TailSpin } from 'react-loader-spinner';
+import { motion } from 'framer-motion';
+import { MutatingDots } from 'react-loader-spinner';
 
-const Spline = React.lazy(() => import('@splinetool/react-spline'));
+import Blob from './Blob';
 
-const Hero = () => {
+// ANIMATION VARIANTS
+const containerVariant = {
+  initial: {
+    x: 0,
+  },
+  animate: {
+    x: 0,
+    transition: {
+      staggerChildren: 0.1,
+    },
+  },
+};
+
+const childVariants = {
+  initial: {
+    x: -50,
+    opacity: 0,
+  },
+  animate: {
+    x: 0,
+    opacity: 1,
+  },
+};
+
+const HomeHero = () => {
+  const blob = <Blob />;
+
   return (
     <section className="hero__section" id="about">
-      <div className="hero__left">
+      <motion.div
+        className="hero__left"
+        variants={containerVariant}
+        initial="initial"
+        animate="animate"
+      >
         <div className="hero__about">
-          <span className="hero__name">nilax seal</span>
-          <span className="hero__desc">
+          <motion.span variants={childVariants} className="hero__name">
+            rupam seal
+          </motion.span>
+          <motion.span variants={childVariants} className="hero__desc">
             &lt;Web and Android Developer&gt; &lt;UI/UX Designer&gt;
-          </span>
+          </motion.span>
         </div>
-        <div className="hero__work">
+        <motion.div className="hero__work" variants={childVariants}>
           <div className="section__title-container">
             <span className="section__title">About</span>
             <div className="section__title-line"></div>
@@ -28,8 +62,8 @@ const Hero = () => {
             including Java, C++, Python, and JavaScript but I&#39;m always
             adding new skills to my repertoire.
           </p>
-        </div>
-        <div className="hero__resume-button">
+        </motion.div>
+        <motion.div variants={childVariants} className="hero__resume-button">
           <div className="hero__resume-download">
             <a
               rel="noreferrer"
@@ -43,19 +77,20 @@ const Hero = () => {
           <a className="hero__resume-txt" href={resume}>
             My Resume
           </a>
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
       {/* ISOMATRIC VIEW */}
       <div className="hero__right" id="avatar">
         <Suspense
           fallback={
             <div>
-              <TailSpin
-                height="80"
-                width="80"
-                color="#858585"
-                ariaLabel="tail-spin-loading"
-                radius="1"
+              <MutatingDots
+                height="100"
+                width="100"
+                color="#b390fe"
+                secondaryColor="#fdff96"
+                radius="12.5"
+                ariaLabel="mutating-dots-loading"
                 wrapperStyle={{}}
                 wrapperClass=""
                 visible={true}
@@ -63,15 +98,11 @@ const Hero = () => {
             </div>
           }
         >
-          {window.innerWidth <= 820 ? (
-            <Spline scene="https://prod.spline.design/Da7j8Jp7yKj-itxF/scene.splinecode" />
-          ) : (
-            <Spline scene="https://prod.spline.design/lS8fzq1TO4nqjW-u/scene.splinecode" />
-          )}
+          {blob}
         </Suspense>
       </div>
     </section>
   );
 };
 
-export default Hero;
+export default HomeHero;

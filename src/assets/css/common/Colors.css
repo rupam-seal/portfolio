@@ -11,7 +11,7 @@ body.light {
   --colorText20: rgba(27, 32, 45, 0.2);
 
   --colorTextBtn: #f0e6da;
-  --colorCardBg: rgba(249, 245, 239, 0.443);
+  --colorCardBg: rgba(249, 245, 239, 0.5);
   --colorOverlayBg: linear-gradient(
     rgba(240, 230, 218, 0.3),
     rgba(240, 230, 218, 0.3)
@@ -38,7 +38,7 @@ body.dark {
   --colorText20: rgba(255, 255, 255, 0.2);
 
   --colorTextBtn: rgb(29, 29, 31);
-  --colorCardBg: rgba(36, 36, 36, 0.443);
+  --colorCardBg: rgba(36, 36, 36, 0.5);
   --colorOverlayBg: linear-gradient(
     rgba(29, 29, 31, 0.5),
     rgba(29, 29, 31, 0.5)

@@ -1,7 +1,7 @@
 import React from 'react';
 import { posts } from '../../data/Posts';
 
-const projects = () => {
+const HomeProjects = () => {
   const project = posts.map((post, index) => {
     return (
       <div className="project__card" key={index}>
@@ -61,4 +61,4 @@ const projects = () => {
   );
 };
 
-export default projects;
+export default HomeProjects;
