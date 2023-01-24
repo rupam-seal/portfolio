@@ -35,7 +35,7 @@ root.render(
         <Routes>
           {/* Home */}
           <Route path="/" element={<HomePage />} exact />
-          <Route path="/works/:id" element={<WorksPage />} exact />
+          <Route path="/works/:title/:id" element={<WorksPage />} exact />
         </Routes>
         <Footer />
       </div>

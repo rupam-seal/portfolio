@@ -27,7 +27,7 @@
   font-weight: 900;
   margin-bottom: 0.5rem;
   font-family: sans-serif;
-  color: var(--colorText90);
+  color: var(--colorText100);
   -webkit-animation: gradient 20s infinite ease-out;
   animation: gradient 20s infinite ease-out;
   z-index: 100;

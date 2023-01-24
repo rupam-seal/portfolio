@@ -1,30 +1,32 @@
 import React, { useEffect } from 'react';
-import card from '../assets/images/robox.png';
 import { IoIosArrowForward } from 'react-icons/io';
-import { Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
+
+import { projects } from '../data/WorkData';
 
 import { motion } from 'framer-motion';
 
 // ANIMATION VARIANTS
 const containerVariant = {
   initial: {
-    x: 0,
+    y: 0,
   },
   animate: {
-    x: 0,
+    y: 0,
     transition: {
       staggerChildren: 0.1,
+      delayChildren: 0.3,
     },
   },
 };
 
 const childVariants = {
   initial: {
-    x: -50,
+    y: 30,
     opacity: 0,
   },
   animate: {
-    x: 0,
+    y: 0,
     opacity: 1,
   },
 };
@@ -54,32 +56,36 @@ const Card = () => {
     });
   });
 
+  const { title, id } = useParams();
+
+  const item = projects[title].project[id];
+
   return (
     <motion.div
       className="card"
       id="card"
-      variants={childVariants}
+      variants={containerVariant}
       initial="initial"
       animate="animate"
     >
-      <div className="detail__container">
+      <motion.div variants={childVariants} className="detail__container">
         <div className="name__container">
           <Link to={'/'}>
             <span className="detail__link">Works</span>
           </Link>
           <IoIosArrowForward />
-          <span className="detail__name">Cointra</span>
+          <span className="detail__name">{item.title}</span>
         </div>
         <span className="detail__detail">
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;imo is a image
-          classification website where user can upload images and it will
-          classify images into their respective category \remarkably powerful
-          layout mode. When we truly understand how it works, we can build
-          dynamic layouts that respond automatically, rearranging themselves
-          as-needed.
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{item.desc}
         </span>
-      </div>
-      <img src={card} alt="" className="card__img tilt" />
+      </motion.div>
+      <motion.img
+        variants={childVariants}
+        src={item.image}
+        alt=""
+        className="card__img tilt"
+      ></motion.img>
     </motion.div>
   );
 };

@@ -9,23 +9,24 @@ import Blob from './Blob';
 // ANIMATION VARIANTS
 const containerVariant = {
   initial: {
-    x: 0,
+    y: 0,
   },
   animate: {
-    x: 0,
+    y: 0,
     transition: {
       staggerChildren: 0.1,
+      delayChildren: 0.5,
     },
   },
 };
 
 const childVariants = {
   initial: {
-    x: -50,
+    y: 20,
     opacity: 0,
   },
   animate: {
-    x: 0,
+    y: 0,
     opacity: 1,
   },
 };

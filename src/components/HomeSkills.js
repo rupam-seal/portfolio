@@ -7,7 +7,7 @@ import { motion } from 'framer-motion';
 const containerVariant = {
   initial: {
     opacity: 0,
-    y: -10,
+    y: 20,
   },
   animate: {
     opacity: 1,
@@ -15,6 +15,7 @@ const containerVariant = {
     transition: {
       delay: 0.2,
       duration: 0.5,
+      delay: 0.3,
     },
   },
 };
