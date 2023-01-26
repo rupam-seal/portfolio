@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import Theme from './common/Theme';
 
-import { motion, useScroll } from 'framer-motion';
+import { motion } from 'framer-motion';
 
 // ANIMATION VARIANTS
 const containerVariant = {
@@ -29,6 +29,7 @@ const iconVariants = {
 
 const Navigation = () => {
   useEffect(() => {
+    let nav = document.getElementById('nav');
     // ========== RIGHT FIXED NAVBAR ==========
     // set the right margin of navbar
     // with respect to the body margin
@@ -59,36 +60,18 @@ const Navigation = () => {
         // right 2 rem
         if (windowWidth < 1050) {
           windowWidth = window.innerWidth;
-          const nav = document.getElementById('nav');
+
           nav.style.marginRight = 2 + 'rem';
         } else {
           // default margin
           marginRight(1000);
         }
-        console.log(
-          'windowWidth=' +
-            windowWidth +
-            '----' +
-            'containerWidth=' +
-            this.document.querySelector('.main__container').clientWidth
-        );
-        // if (windowWidth <= 600) {
-        //   var w = window.innerWidth;
-        //   const mainWidth = document.querySelector(".main__container");
-        //   // console.log(w);
-        //   // console.log(mainWidth);
-        //   mainWidth.style.width = w / 10 - 5 + "rem";
-        //   // console.log(
-        //   //   "<=600" + "w-w" + windowWidth + "------" + "w-m " + w / 10 - 5 + "rem"
-        //   // );
-        // }
       },
       []
     );
 
     function marginRight(containerWidth) {
       var windowWidth = window.innerWidth;
-      const nav = document.getElementById('nav');
       nav.style.marginRight = (windowWidth - containerWidth) / 10 / 2 + 'rem';
       // console.log((((w-880)/10)/2)+'rem')
     }
@@ -101,11 +84,6 @@ const Navigation = () => {
       progress.style.width = `${
         (LINE_MAX_WIDTH * ((window.scrollY / scrollableHeight) * 100)) / 100
       }rem`;
-      console.log(
-        `${
-          (LINE_MAX_WIDTH * ((window.scrollY / scrollableHeight) * 100)) / 100
-        }rem`
-      );
     });
   });
 

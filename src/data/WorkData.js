@@ -1,10 +1,10 @@
-import img1 from '../assets/images/Cointra.png';
-import img2 from '../assets/images/CSV.png';
-import img3 from '../assets/images/Imo.png';
-import img4 from '../assets/images/RepTok.png';
-import img5 from '../assets/images/TODO.png';
-import img6 from '../assets/images/Tsks.png';
-import img7 from '../assets/images/Weather.png';
+import img1 from '../assets/images/Cointra.webp';
+import img2 from '../assets/images/CSV.webp';
+import img3 from '../assets/images/Imo.webp';
+import img4 from '../assets/images/RepTok.webp';
+import img5 from '../assets/images/TODO.webp';
+import img6 from '../assets/images/Tsks.webp';
+import img7 from '../assets/images/Weather.webp';
 
 export const projects = [
   {
