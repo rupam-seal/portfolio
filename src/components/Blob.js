@@ -44,7 +44,11 @@ const Blob = () => {
           animate="animate"
           className="hero__right"
         >
-          <Spline scene="https://prod.spline.design/dZBRLxOHrILtHiiX/scene.splinecode" />
+          {window.innerWidth <= 820 ? (
+            <Spline scene="https://prod.spline.design/UPgOGTjK-Q5xbZC1/scene.splinecode" />
+          ) : (
+            <Spline scene="https://prod.spline.design/dZBRLxOHrILtHiiX/scene.splinecode" />
+          )}
         </motion.div>
       ) : (
         <MutatingDots
