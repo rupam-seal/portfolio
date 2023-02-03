@@ -1,8 +1,8 @@
 body.light {
   --colorPrimary: rgb(240, 230, 218);
   --colorSecondary100: #815bd5;
-  --colorSecondary90: #8c65e2;
-  --colorSecondary80: #6e4eb4;
+  --colorSecondary90: #815bd5;
+  --colorSecondary80: #815bd5;
   --colorHighlight: rgb(255, 99, 195);
 
   --colorText100: #1b202d;
@@ -27,9 +27,9 @@ body.light {
 
 body.dark {
   --colorPrimary: #1d1d1f;
-  --colorSecondary100: #2eb8a4;
+  --colorSecondary100: #e4e648;
   --colorSecondary90: #e4e648;
-  --colorSecondary80: #59f4dc;
+  --colorSecondary80: #e4e648;
   --colorHighlight: rgb(255, 99, 195);
 
   --colorText100: #ffffff;
