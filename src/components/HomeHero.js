@@ -44,7 +44,7 @@ const HomeHero = () => {
       >
         <div className="hero__about">
           <motion.span variants={childVariants} className="hero__name">
-            rupam seal
+            NilaX Seal
           </motion.span>
           <motion.span variants={childVariants} className="hero__desc">
             &lt;Web and Android Developer&gt; &lt;UI/UX Designer&gt;
@@ -52,7 +52,7 @@ const HomeHero = () => {
         </div>
         <motion.div className="hero__work" variants={childVariants}>
           <div className="section__title-container">
-            <span className="section__title">About</span>
+            <span className="section__title">About me</span>
             <div className="section__title-line"></div>
           </div>
           <p className="hero__work-txt">
@@ -76,7 +76,7 @@ const HomeHero = () => {
             </a>
           </div>
           <a className="hero__resume-txt" href={resume}>
-            My Resume
+            Resume
           </a>
         </motion.div>
       </motion.div>

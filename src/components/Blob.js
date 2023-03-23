@@ -1,70 +1,23 @@
-import React, { useEffect, useState } from 'react';
-import { MutatingDots } from 'react-loader-spinner';
-import { motion } from 'framer-motion';
-
-// const Spline = React.lazy(() => import('@splinetool/react-spline'));
+import React, { useState } from 'react';
 
 import Spline from '@splinetool/react-spline';
+import { useMobileSize } from '../hooks/useMobileSize';
+import { motion } from 'framer-motion';
 
-const blobVariants = {
-  initial: {
-    scale: 0,
-    opacity: 0,
-    rotate: 120,
-  },
-  animate: {
-    scale: 1,
-    opacity: 1,
-    rotate: 0,
-    transition: {
-      type: 'spring',
-      stiffness: 120,
-    },
-  },
-};
+const Blob = ({}) => {
+    const isMobileSize = useMobileSize();
 
-const Blob = () => {
-  const [isDisplayed, setIsDisplayed] = useState(false);
+    // console.log(isMobileSize);
 
-  useEffect(() => {
-    setInterval(() => {
-      setIsDisplayed(true);
-    }, 1000);
-  }, []);
-
-  return (
-    // {window.innerWidth <= 820 ? <Blob /> : <Blob />}
-    // Da7j8Jp7yKj-itxF
-    // lS8fzq1TO4nqjW-u
-    <>
-      {isDisplayed == true ? (
-        <motion.div
-          variants={blobVariants}
-          initial="initial"
-          animate="animate"
-          className="hero__right"
-        >
-          {window.innerWidth <= 820 ? (
-            <Spline scene="https://prod.spline.design/UPgOGTjK-Q5xbZC1/scene.splinecode" />
-          ) : (
-            <Spline scene="https://prod.spline.design/dZBRLxOHrILtHiiX/scene.splinecode" />
-          )}
+    return (
+        <motion.div className="hero__right" initial="initial" animate="animate">
+            {isMobileSize ? (
+                <Spline scene="https://prod.spline.design/0IKTgKhk5YpBoZjL/scene.splinecode" />
+            ) : (
+                <Spline scene="https://prod.spline.design/A6fJevXqO10jol-l/scene.splinecode" />
+            )}
         </motion.div>
-      ) : (
-        <MutatingDots
-          height="100"
-          width="100"
-          color="#b390fe"
-          secondaryColor="#fdff96"
-          radius="12.5"
-          ariaLabel="mutating-dots-loading"
-          wrapperStyle={{}}
-          wrapperClass=""
-          visible={true}
-        />
-      )}
-    </>
-  );
+    );
 };
 
 export default Blob;

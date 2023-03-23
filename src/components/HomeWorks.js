@@ -8,8 +8,10 @@ const HomeWorks = () => {
       <section className="project__section" id="projects" key={project.title}>
         <div className="project__title">
           <div className="project__title-container">
-            <span className="project__title">{project.title}</span>
-            <div className="project__title-line"></div>
+          <div className="section__title-container">
+            <span className="section__title">Works</span>
+            <div className="section__title-line"></div>
+          </div>
           </div>
         </div>
         <div className="project__card-list">

@@ -116,7 +116,7 @@
   }
 
   .footer {
-    margin-right: 0rem;
+    margin-right: 3rem;
   }
 
   .footer__top {
@@ -131,7 +131,7 @@
   }
 
   .footer__email-container {
-    display: none;  
+    display: none;
   }
 
   .footer__social {

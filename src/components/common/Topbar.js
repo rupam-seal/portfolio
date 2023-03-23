@@ -68,7 +68,7 @@ const Topbar = () => {
               <span>
                 <GiJetPack className="topbar__logo-img" />
               </span>
-              <span className="topbar__logo-txt">RS</span>
+              <span className="topbar__logo-txt">NS</span>
             </Link>
           </motion.div>
 

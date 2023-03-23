@@ -50,6 +50,7 @@
   z-index: 600;
   /* transition: color 0.8s ease-in-out; */
 }
+
 .nav__item:hover {
   color: var(--colorSecondary90);
 }
@@ -65,7 +66,7 @@
   background-color: var(--colorThemeBg);
   display: flex;
   font-size: 1.8rem;
-  color: var(--colorMenu100);
+  color: #FFF;
   align-items: center;
   justify-content: center;
   cursor: pointer;

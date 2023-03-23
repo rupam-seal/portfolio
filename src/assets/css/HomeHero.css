@@ -24,9 +24,8 @@
 
 .hero__name {
   font-size: 3.6rem;
-  font-weight: 900;
+  font-weight: 700;
   margin-bottom: 0.5rem;
-  font-family: sans-serif;
   color: var(--colorText100);
   -webkit-animation: gradient 20s infinite ease-out;
   animation: gradient 20s infinite ease-out;
@@ -44,9 +43,9 @@
   } */
 
 .hero__desc {
-  font-size: 1.6rem;
-  font-weight: 500;
-  color: var(--colorText90);
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: var(--colorText80);
   text-decoration: none;
   text-underline-offset: 0.6rem;
   -webkit-text-decoration-color: var(--colorText20);
@@ -55,7 +54,6 @@
   transition: -webkit-text-decoration 0.5s;
   transition: text-decoration 0.5s;
   transition: text-decoration 0.5s, -webkit-text-decoration 0.5s;
-  font-family: sans-serif;
   -webkit-animation: gradient 20s infinite ease-out;
   animation: gradient 20s infinite ease-out;
   z-index: 100;
@@ -98,27 +96,24 @@
 }
 
 .hero__work-txt {
-  font-size: 1.6rem;
-  font-weight: 500;
-  color: var(--colorText90);
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: var(--colorText80);
   line-height: 1.5;
-  -webkit-hyphens: auto;
-  -ms-hyphens: auto;
-  hyphens: auto;
-  text-align: justify;
 }
 
 /* resume button */
 .hero__resume-button {
   display: inline-flex;
-  height: 4rem;
-  width: 15rem;
-  border: 1px solid var(--colorSecondary90);
-  color: var(--colorSecondary90);
+  width: 13rem;
+  padding: 1rem;
+  border: none;
+  color: #FFF;
+  background-color: var(--colorSecondary90);
   border-radius: 1rem;
-  text-transform: uppercase;
+  font-weight: 500;
   text-decoration: none;
-  font-size: 0.8em;
+  font-size: 1.6rem;
   letter-spacing: 1.5px;
   align-items: center;
   justify-content: center;
@@ -136,9 +131,9 @@
 .hero__resume-download-txt {
   position: relative;
   left: 0;
-  color: var(--colorSecondary90);
+  color: #FFF;
   letter-spacing: 1px;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   transition: all 0.35s ease-Out;
 }
 
@@ -170,8 +165,8 @@
   justify-content: center;
   width: 100%;
   height: 100%;
-  font-size: 1.2rem;
-  color: var(--colorSecondary90);
+  font-size: 1.6rem;
+  color: #FFF;
 }
 
 /* ========== HERO RIGHT ========== */
@@ -199,6 +194,7 @@
   .hero__left {
     width: 40rem;
   }
+
   .hero__right {
     top: 0;
     bottom: 0;
@@ -214,6 +210,7 @@
     margin-top: 15rem;
     margin-bottom: 10rem;
   }
+
   .hero__left {
     width: 100%;
     margin-top: 16rem;
@@ -222,9 +219,8 @@
   .hero__right {
     width: 49rem;
     height: 49rem;
-    padding-right: 5rem;
     top: -25rem;
-    left: 22%;
+    left: 55%;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
   }
