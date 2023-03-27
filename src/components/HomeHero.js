@@ -1,5 +1,4 @@
 import React, { Suspense } from 'react';
-import resume from '../assets/document/resume.pdf';
 
 import { motion } from 'framer-motion';
 import { MutatingDots } from 'react-loader-spinner';
@@ -69,7 +68,7 @@ const HomeHero = () => {
             <a
               rel="noreferrer"
               target="_blank"
-              href={resume}
+              href={'/'}
               id="hero__resume-download-txt"
             >
               Download
