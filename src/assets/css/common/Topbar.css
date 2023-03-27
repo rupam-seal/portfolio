@@ -153,7 +153,7 @@
   0.2% {
     transform: scaleX(0.8);
   }
-} 
+}
 
 /* ======== for responsiveness ======== */
 @media (max-width: 820px) {
