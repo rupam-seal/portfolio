@@ -75,7 +75,7 @@ const HomeHero = () => {
               Download
             </a>
           </div>
-          <a className="hero__resume-txt" href={resume}>
+          <a className="hero__resume-txt" href={'/'}>
             Resume
           </a>
         </motion.div>
