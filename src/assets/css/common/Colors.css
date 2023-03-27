@@ -13,8 +13,10 @@ body.light {
 
   --colorTextBtn: #f0e6da;
   --colorCardBg: rgba(249, 245, 239, 0.5);
-  --colorOverlayBg: linear-gradient(rgba(240, 230, 218, 0.3),
-      rgba(240, 230, 218, 0.3));
+  --colorOverlayBg: linear-gradient(
+    rgba(240, 230, 218, 0.3),
+    rgba(240, 230, 218, 0.3)
+  );
   --colorLiquidObj: linear-gradient(90deg, #8c65e2, #ff7575);
   --colorThemeBg: #815bd5;
   --colorProjectBg: rgba(240, 230, 218, 0.9);
@@ -39,8 +41,10 @@ body.dark {
 
   --colorTextBtn: rgb(29, 29, 31);
   --colorCardBg: rgba(36, 36, 36, 0.5);
-  --colorOverlayBg: linear-gradient(rgba(29, 29, 31, 0.5),
-      rgba(29, 29, 31, 0.5));
+  --colorOverlayBg: linear-gradient(
+    rgba(29, 29, 31, 0.5),
+    rgba(29, 29, 31, 0.5)
+  );
   --colorLiquidObj: linear-gradient(90deg, #ff7575, #8c65e2);
   --colorThemeBg: #ff7575;
   --colorProjectBg: rgba(29, 29, 31, 0.9);
