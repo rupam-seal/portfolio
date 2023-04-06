@@ -1,5 +1,5 @@
 export const link = {
-  github: 'https://github.com/rupam-seal',
+  github: '',
   dribble: '',
   linkedin: '',
   twitter: '',
